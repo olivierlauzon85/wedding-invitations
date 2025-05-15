@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
-import { Translate } from 'lucide-react';
+import { Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const LanguageSwitcher: React.FC = () => {
@@ -18,7 +18,7 @@ const LanguageSwitcher: React.FC = () => {
       className="flex items-center gap-2 hover:bg-fall-yellow/20" 
       onClick={toggleLanguage}
     >
-      <Translate size={16} />
+      <Globe size={16} />
       <span className="text-sm font-medium">
         {language === 'en' ? 'FR' : 'EN'}
       </span>
