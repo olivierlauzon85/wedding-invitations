@@ -8,51 +8,79 @@ import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import { useForm } from "react-hook-form";
+import { Check, Plus, User, UserPlus, X } from "lucide-react";
+import {
+  Form,
+  FormControl,
+  FormDescription,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+
+type FormValues = {
+  name: string;
+  email: string;
+  attending: string;
+  meal: string;
+  hasPlusOne: boolean;
+  plusOneName: string;
+  plusOneMeal: string;
+  dietary: string;
+  message: string;
+};
 
 const RsvpForm: React.FC = () => {
   const { t } = useLanguage();
   const { toast } = useToast();
   const [submitted, setSubmitted] = useState(false);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    attending: '',
-    guests: 1,
-    dietary: '',
-    message: ''
+  const [hasPlusOne, setHasPlusOne] = useState(false);
+  
+  const form = useForm<FormValues>({
+    defaultValues: {
+      name: '',
+      email: '',
+      attending: '',
+      meal: '',
+      hasPlusOne: false,
+      plusOneName: '',
+      plusOneMeal: '',
+      dietary: '',
+      message: ''
+    }
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
+  const attending = form.watch('attending');
 
-  const handleRadioChange = (value: string) => {
-    setFormData((prev) => ({ ...prev, attending: value }));
-  };
-
-  const handleNumberChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const value = parseInt(e.target.value);
-    if (value > 0) {
-      setFormData((prev) => ({ ...prev, guests: value }));
-    }
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // Here you would typically send the form data to a server
-    console.log('Form submitted:', formData);
+  const onSubmit = (data: FormValues) => {
+    console.log('Form submitted:', data);
     
     // Show success message
     toast({
       title: t('rsvp.thanks'),
-      description: `${formData.name}, ${formData.attending === 'yes' ? 
+      description: `${data.name}, ${data.attending === 'yes' ? 
         t('rsvp.attending.yes').toLowerCase() : 
         t('rsvp.attending.no').toLowerCase()}`,
     });
     
     setSubmitted(true);
+  };
+
+  const togglePlusOne = () => {
+    setHasPlusOne(!hasPlusOne);
+    form.setValue('hasPlusOne', !hasPlusOne);
+    if (!hasPlusOne) {
+      form.reset({ ...form.getValues(), plusOneName: '', plusOneMeal: '' });
+    }
   };
 
   return (
@@ -67,96 +95,179 @@ const RsvpForm: React.FC = () => {
           </CardHeader>
           <CardContent>
             {!submitted ? (
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="space-y-2">
-                  <Label htmlFor="name">{t('rsvp.name')}</Label>
-                  <Input 
-                    id="name" 
+              <Form {...form}>
+                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                  <FormField
+                    control={form.control}
                     name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>{t('rsvp.name')}</FormLabel>
+                        <FormControl>
+                          <Input {...field} required />
+                        </FormControl>
+                      </FormItem>
+                    )}
                   />
-                </div>
-                
-                <div className="space-y-2">
-                  <Label htmlFor="email">{t('rsvp.email')}</Label>
-                  <Input 
-                    id="email" 
+                  
+                  <FormField
+                    control={form.control}
                     name="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>{t('rsvp.email')}</FormLabel>
+                        <FormControl>
+                          <Input type="email" {...field} required />
+                        </FormControl>
+                      </FormItem>
+                    )}
                   />
-                </div>
-                
-                <div className="space-y-2">
-                  <Label>{t('rsvp.attending')}</Label>
-                  <RadioGroup 
-                    value={formData.attending} 
-                    onValueChange={handleRadioChange} 
-                    className="flex space-x-4"
-                  >
-                    <div className="flex items-center space-x-2">
-                      <RadioGroupItem value="yes" id="attending-yes" />
-                      <Label htmlFor="attending-yes">{t('rsvp.attending.yes')}</Label>
-                    </div>
-                    <div className="flex items-center space-x-2">
-                      <RadioGroupItem value="no" id="attending-no" />
-                      <Label htmlFor="attending-no">{t('rsvp.attending.no')}</Label>
-                    </div>
-                  </RadioGroup>
-                </div>
-                
-                {formData.attending === 'yes' && (
-                  <>
-                    <div className="space-y-2">
-                      <Label htmlFor="guests">{t('rsvp.guests')}</Label>
-                      <Input 
-                        id="guests" 
-                        name="guests"
-                        type="number"
-                        min={1}
-                        value={formData.guests}
-                        onChange={handleNumberChange}
+                  
+                  <FormField
+                    control={form.control}
+                    name="attending"
+                    render={({ field }) => (
+                      <FormItem className="space-y-2">
+                        <FormLabel>{t('rsvp.attending')}</FormLabel>
+                        <FormControl>
+                          <RadioGroup
+                            value={field.value}
+                            onValueChange={field.onChange}
+                            className="flex space-x-4"
+                          >
+                            <div className="flex items-center space-x-2">
+                              <RadioGroupItem value="yes" id="attending-yes" />
+                              <Label htmlFor="attending-yes">{t('rsvp.attending.yes')}</Label>
+                            </div>
+                            <div className="flex items-center space-x-2">
+                              <RadioGroupItem value="no" id="attending-no" />
+                              <Label htmlFor="attending-no">{t('rsvp.attending.no')}</Label>
+                            </div>
+                          </RadioGroup>
+                        </FormControl>
+                      </FormItem>
+                    )}
+                  />
+                  
+                  {attending === 'yes' && (
+                    <>
+                      <FormField
+                        control={form.control}
+                        name="meal"
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel>{t('rsvp.meal')}</FormLabel>
+                            <Select onValueChange={field.onChange} defaultValue={field.value}>
+                              <FormControl>
+                                <SelectTrigger className="w-full">
+                                  <SelectValue placeholder={t('rsvp.meal.select')} />
+                                </SelectTrigger>
+                              </FormControl>
+                              <SelectContent>
+                                <SelectItem value="beef">{t('rsvp.meal.beef')}</SelectItem>
+                                <SelectItem value="chicken">{t('rsvp.meal.chicken')}</SelectItem>
+                                <SelectItem value="fish">{t('rsvp.meal.fish')}</SelectItem>
+                                <SelectItem value="vegetarian">{t('rsvp.meal.vegetarian')}</SelectItem>
+                              </SelectContent>
+                            </Select>
+                          </FormItem>
+                        )}
                       />
-                    </div>
-                    
-                    <div className="space-y-2">
-                      <Label htmlFor="dietary">{t('rsvp.dietary')}</Label>
-                      <Input 
-                        id="dietary" 
+                      
+                      <div className="flex items-center space-x-2">
+                        <Button
+                          type="button"
+                          variant="outline"
+                          onClick={togglePlusOne}
+                          className={`${hasPlusOne ? 'bg-fall-orange/10' : 'bg-transparent'}`}
+                        >
+                          {hasPlusOne ? <UserPlus className="mr-2" /> : <User className="mr-2" />}
+                          {t('rsvp.plusOne.toggle')}
+                          {hasPlusOne ? <X className="ml-2" /> : <Plus className="ml-2" />}
+                        </Button>
+                      </div>
+                      
+                      {hasPlusOne && (
+                        <div className="space-y-4 p-4 border border-fall-orange/20 rounded-md bg-fall-orange/5">
+                          <FormField
+                            control={form.control}
+                            name="plusOneName"
+                            render={({ field }) => (
+                              <FormItem>
+                                <FormLabel>{t('rsvp.plusOne.name')}</FormLabel>
+                                <FormControl>
+                                  <Input {...field} required={hasPlusOne} />
+                                </FormControl>
+                              </FormItem>
+                            )}
+                          />
+                          
+                          <FormField
+                            control={form.control}
+                            name="plusOneMeal"
+                            render={({ field }) => (
+                              <FormItem>
+                                <FormLabel>{t('rsvp.plusOne.meal')}</FormLabel>
+                                <Select onValueChange={field.onChange} defaultValue={field.value}>
+                                  <FormControl>
+                                    <SelectTrigger className="w-full">
+                                      <SelectValue placeholder={t('rsvp.meal.select')} />
+                                    </SelectTrigger>
+                                  </FormControl>
+                                  <SelectContent>
+                                    <SelectItem value="beef">{t('rsvp.meal.beef')}</SelectItem>
+                                    <SelectItem value="chicken">{t('rsvp.meal.chicken')}</SelectItem>
+                                    <SelectItem value="fish">{t('rsvp.meal.fish')}</SelectItem>
+                                    <SelectItem value="vegetarian">{t('rsvp.meal.vegetarian')}</SelectItem>
+                                  </SelectContent>
+                                </Select>
+                              </FormItem>
+                            )}
+                          />
+                        </div>
+                      )}
+                      
+                      <FormField
+                        control={form.control}
                         name="dietary"
-                        value={formData.dietary}
-                        onChange={handleChange}
+                        render={({ field }) => (
+                          <FormItem>
+                            <FormLabel>{t('rsvp.dietary')}</FormLabel>
+                            <FormControl>
+                              <Input {...field} />
+                            </FormControl>
+                            <FormDescription>{t('rsvp.dietary.description')}</FormDescription>
+                          </FormItem>
+                        )}
                       />
-                    </div>
-                  </>
-                )}
-                
-                <div className="space-y-2">
-                  <Label htmlFor="message">{t('rsvp.message')}</Label>
-                  <Textarea 
-                    id="message" 
+                    </>
+                  )}
+                  
+                  <FormField
+                    control={form.control}
                     name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    rows={4}
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>{t('rsvp.message')}</FormLabel>
+                        <FormControl>
+                          <Textarea rows={4} {...field} />
+                        </FormControl>
+                      </FormItem>
+                    )}
                   />
-                </div>
-                
-                <Button 
-                  type="submit" 
-                  className="w-full bg-fall-orange hover:bg-fall-red text-white"
-                >
-                  {t('rsvp.submit')}
-                </Button>
-              </form>
+                  
+                  <Button 
+                    type="submit" 
+                    className="w-full bg-fall-orange hover:bg-fall-red text-white"
+                  >
+                    {t('rsvp.submit')}
+                  </Button>
+                </form>
+              </Form>
             ) : (
               <div className="text-center py-10">
                 <h3 className="text-2xl font-serif text-fall-green mb-4">{t('rsvp.thanks')}</h3>
-                <p className="text-muted-foreground">{formData.attending === 'yes' ? 
+                <p className="text-muted-foreground">{form.getValues().attending === 'yes' ? 
                   t('rsvp.attending.yes') : 
                   t('rsvp.attending.no')}</p>
                 <Button 
