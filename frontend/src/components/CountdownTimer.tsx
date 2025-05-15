@@ -52,22 +52,22 @@ const CountdownTimer: React.FC = () => {
           <span className="mt-2 text-sm md:text-base text-fall-orange">{t('countdown.days')}</span>
         </div>
         <div className="flex flex-col items-center">
-          <div className="bg-fall-orange/10 border border-fall-orange w-16 h-16 md:w-24 md:h-24 rounded-lg flex items-center justify-center">
-            <span className="font-serif text-2xl md:text-4xl text-fall-red font-bold">{timeLeft.hours}</span>
+          <div className="bg-fall-yellow/10 border border-fall-yellow w-16 h-16 md:w-24 md:h-24 rounded-lg flex items-center justify-center">
+            <span className="font-serif text-2xl md:text-4xl text-fall-orange font-bold">{timeLeft.hours}</span>
           </div>
-          <span className="mt-2 text-sm md:text-base text-fall-red">{t('countdown.hours')}</span>
+          <span className="mt-2 text-sm md:text-base text-fall-orange">{t('countdown.hours')}</span>
         </div>
         <div className="flex flex-col items-center">
-          <div className="bg-fall-red/10 border border-fall-red w-16 h-16 md:w-24 md:h-24 rounded-lg flex items-center justify-center">
+          <div className="bg-fall-yellow/10 border border-fall-yellow w-16 h-16 md:w-24 md:h-24 rounded-lg flex items-center justify-center">
             <span className="font-serif text-2xl md:text-4xl text-fall-orange font-bold">{timeLeft.minutes}</span>
           </div>
           <span className="mt-2 text-sm md:text-base text-fall-orange">{t('countdown.minutes')}</span>
         </div>
         <div className="flex flex-col items-center">
-          <div className="bg-fall-green/10 border border-fall-green w-16 h-16 md:w-24 md:h-24 rounded-lg flex items-center justify-center">
-            <span className="font-serif text-2xl md:text-4xl text-fall-green font-bold">{timeLeft.seconds}</span>
+          <div className="bg-fall-yellow/10 border border-fall-yellow w-16 h-16 md:w-24 md:h-24 rounded-lg flex items-center justify-center">
+            <span className="font-serif text-2xl md:text-4xl text-fall-orange font-bold">{timeLeft.seconds}</span>
           </div>
-          <span className="mt-2 text-sm md:text-base text-fall-green">{t('countdown.seconds')}</span>
+          <span className="mt-2 text-sm md:text-base text-fall-orange">{t('countdown.seconds')}</span>
         </div>
       </div>
     </div>

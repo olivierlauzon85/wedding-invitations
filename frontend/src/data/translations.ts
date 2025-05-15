@@ -16,34 +16,32 @@ export const translations: TranslationsType = {
     'nav.info': 'Info',
     'nav.rsvp': 'RSVP',
     'nav.gallery': 'Gallery',
-    
+
     // Hero Section
     'hero.title': 'Janie & Olivier',
     'hero.subtitle': 'We\'re getting married!',
     'hero.date': 'October 10th, 2026',
     'hero.location': 'Montreal, Canada',
-    
+
     // Countdown
     'countdown.days': 'Days',
     'countdown.hours': 'Hours',
     'countdown.minutes': 'Minutes',
     'countdown.seconds': 'Seconds',
     'countdown.title': 'Countdown to our special day',
-    
+
     // Wedding Info
     'info.title': 'Our Wedding Day',
     'info.date': 'Friday, October 10th, 2026',
     'info.ceremony.title': 'Ceremony',
-    'info.ceremony.time': '3:00 PM',
-    'info.ceremony.location': 'St. Mary\'s Church',
-    'info.ceremony.address': '123 Wedding Blvd, Montreal',
+    'info.ceremony.time': '4:00 PM',
+    'info.ceremony.location': 'Reception Rooms Lalande',
+    'info.ceremony.address': '862 Mnt Laurin, Saint-Eustache, QC J7R 4K3',
     'info.reception.title': 'Reception',
     'info.reception.time': '5:30 PM',
-    'info.reception.location': 'Autumn Garden Venue',
-    'info.reception.address': '456 Celebration Ave, Montreal',
-    'info.accommodation.title': 'Accommodation',
-    'info.accommodation.description': 'We\'ve reserved rooms at the Fall Hotel. Use code "J&O2026" for a special rate.',
-    
+    'info.reception.location': 'Reception Rooms Lalande',
+    'info.reception.address': '862 Mnt Laurin, Saint-Eustache, QC J7R 4K3',
+
     // RSVP
     'rsvp.title': 'RSVP',
     'rsvp.deadline': 'Please respond by September 1st, 2026',
@@ -57,7 +55,7 @@ export const translations: TranslationsType = {
     'rsvp.message': 'Message for the couple (optional)',
     'rsvp.submit': 'Submit RSVP',
     'rsvp.thanks': 'Thank you for your response!',
-    
+
     // Footer
     'footer.credits': 'With love, Janie & Olivier',
     'footer.copyright': '© 2025 Janie & Olivier'
@@ -68,34 +66,32 @@ export const translations: TranslationsType = {
     'nav.info': 'Information',
     'nav.rsvp': 'RSVP',
     'nav.gallery': 'Galerie',
-    
+
     // Hero Section
     'hero.title': 'Janie & Olivier',
     'hero.subtitle': 'Nous nous marions!',
     'hero.date': '10 octobre 2026',
     'hero.location': 'Montréal, Canada',
-    
+
     // Countdown
     'countdown.days': 'Jours',
     'countdown.hours': 'Heures',
     'countdown.minutes': 'Minutes',
     'countdown.seconds': 'Secondes',
     'countdown.title': 'Compte à rebours jusqu\'à notre jour spécial',
-    
+
     // Wedding Info
     'info.title': 'Notre Jour de Mariage',
     'info.date': 'Vendredi, 10 octobre 2026',
     'info.ceremony.title': 'Cérémonie',
-    'info.ceremony.time': '15h00',
-    'info.ceremony.location': 'Église Sainte-Marie',
-    'info.ceremony.address': '123 Boul. Mariage, Montréal',
+    'info.ceremony.time': '4:00 PM',
+    'info.ceremony.location': 'Salles de réception Lalande',
+    'info.ceremony.address': '862 Mnt Laurin, Saint-Eustache, QC J7R 4K3',
     'info.reception.title': 'Réception',
-    'info.reception.time': '17h30',
-    'info.reception.location': 'Salle de Jardin d\'Automne',
-    'info.reception.address': '456 Ave. Célébration, Montréal',
-    'info.accommodation.title': 'Hébergement',
-    'info.accommodation.description': 'Nous avons réservé des chambres à l\'Hôtel Automne. Utilisez le code "J&O2026" pour un tarif spécial.',
-    
+    'info.reception.time': '5:30 PM',
+    'info.reception.location': 'Salles de réception Lalande',
+    'info.reception.address': '862 Mnt Laurin, Saint-Eustache, QC J7R 4K3',
+
     // RSVP
     'rsvp.title': 'RSVP',
     'rsvp.deadline': 'Veuillez répondre avant le 1er septembre 2026',
@@ -109,7 +105,7 @@ export const translations: TranslationsType = {
     'rsvp.message': 'Message pour le couple (optionnel)',
     'rsvp.submit': 'Envoyer RSVP',
     'rsvp.thanks': 'Merci pour votre réponse!',
-    
+
     // Footer
     'footer.credits': 'Avec amour, Janie & Olivier',
     'footer.copyright': '© 2025 Janie & Olivier'

@@ -54,22 +54,6 @@ const WeddingInfo: React.FC = () => {
             </CardContent>
           </Card>
         </div>
-        
-        <div className="mt-12 max-w-2xl mx-auto">
-          <Card className="border-fall-green/20 bg-white/80 backdrop-blur-sm">
-            <CardHeader className="pb-2">
-              <CardTitle className="text-fall-green font-serif text-2xl flex items-center">
-                <Home className="mr-2 h-5 w-5" />
-                {t('info.accommodation.title')}
-              </CardTitle>
-            </CardHeader>
-            <CardContent>
-              <p className="text-muted-foreground">
-                {t('info.accommodation.description')}
-              </p>
-            </CardContent>
-          </Card>
-        </div>
       </div>
     </section>
   );
