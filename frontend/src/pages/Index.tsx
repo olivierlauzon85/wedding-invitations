@@ -15,9 +15,11 @@ const Index = () => {
         <Header />
         <main>
           <HeroSection />
-          <WeddingInfo />
-          <QandASection />
-          <RsvpForm />
+          <div className="bg-gradient-to-b from-white to-autumn-lightsage/30">
+            <WeddingInfo />
+            <QandASection />
+            <RsvpForm />
+          </div>
         </main>
         <Footer />
       </div>

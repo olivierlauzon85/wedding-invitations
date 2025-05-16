@@ -19,7 +19,7 @@
     --primary: 20 40% 50%;
     --primary-foreground: 60 30% 98%;
 
-    --secondary: 80 20% 60%;
+    --secondary: 82 20% 71%;  /* Adjusted to match the softened sage */
     --secondary-foreground: 24 9% 10%;
 
     --muted: 45 30% 94%;
@@ -81,5 +81,9 @@
 
   .btn-outline {
     @apply border-2 border-autumn-rust text-autumn-rust hover:bg-autumn-rust hover:text-white font-medium py-2 px-6 rounded-full transition-colors duration-300;
+  }
+
+  .btn-secondary {
+    @apply bg-autumn-sage hover:bg-autumn-sage/80 text-autumn-burgundy font-medium py-2 px-6 rounded-full transition-colors duration-300 border border-autumn-sage/30;
   }
 }

@@ -36,16 +36,16 @@ const Header: React.FC = () => {
         </Link>
 
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#home" className="text-autumn-burgundy hover:text-autumn-rust transition-colors">
+          <a href="#home" className="text-autumn-burgundy hover:text-autumn-rust transition-colors border-b-2 border-transparent hover:border-autumn-sage pb-1">
             {t('nav.home')}
           </a>
-          <a href="#info" className="text-autumn-burgundy hover:text-autumn-rust transition-colors">
+          <a href="#info" className="text-autumn-burgundy hover:text-autumn-rust transition-colors border-b-2 border-transparent hover:border-autumn-sage pb-1">
             {t('nav.info')}
           </a>
-          <a href="#qa" className="text-autumn-burgundy hover:text-autumn-rust transition-colors">
+          <a href="#qa" className="text-autumn-burgundy hover:text-autumn-rust transition-colors border-b-2 border-transparent hover:border-autumn-sage pb-1">
             {t('nav.qa')}
           </a>
-          <a href="#rsvp" className="text-autumn-burgundy hover:text-autumn-rust transition-colors">
+          <a href="#rsvp" className="text-autumn-burgundy hover:text-autumn-rust transition-colors border-b-2 border-transparent hover:border-autumn-sage pb-1">
             {t('nav.rsvp')}
           </a>
         </nav>

@@ -62,10 +62,11 @@ export default {
                 },
                 autumn: {
                     beige: '#CCBBAA',
-                    sage: '#A3B18A',
+                    sage: '#B5C9A1',  // Softened the sage green color
                     rust: '#A84632',
                     burgundy: '#7B1A2D',
                     brown: '#3D2A1A',
+                    lightsage: '#DFE8D5', // Added a lighter sage for subtle accents
                 }
 			},
 			fontFamily: {
@@ -103,7 +104,7 @@ export default {
 				'leaf-fall': 'leaf-fall 10s ease-in-out infinite'
 			},
 			backgroundImage: {
-				'autumn-gradient': 'linear-gradient(to right, #A3B18A, #A84632)',
+				'autumn-gradient': 'linear-gradient(to right, #B5C9A1, #A84632)',
 			}
 		}
 	},
