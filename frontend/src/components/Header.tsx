@@ -1,8 +1,8 @@
-
 import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import LanguageSwitcher from './LanguageSwitcher';
 import { Calendar } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
   const { t } = useLanguage();
@@ -29,10 +29,10 @@ const Header: React.FC = () => {
       }`}
     >
       <div className="container-wedding flex justify-between items-center">
-        <div className="flex items-center space-x-2">
+        <Link to="/" className="flex items-center space-x-2">
           <Calendar className="h-6 w-6 text-fall-orange" />
           <span className="font-serif text-xl text-fall-orange">J&O</span>
-        </div>
+        </Link>
 
         <nav className="hidden md:flex items-center space-x-8">
           <a href="#home" className="text-fall-red hover:text-fall-orange transition-colors">
