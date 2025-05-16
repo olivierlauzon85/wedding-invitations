@@ -60,6 +60,13 @@ export default {
                     green: '#A3CB38',
                     pink: '#FFC0CB',
                 },
+                autumn: {
+                    beige: '#CCBBAA',
+                    sage: '#A3B18A',
+                    rust: '#A84632',
+                    burgundy: '#7B1A2D',
+                    brown: '#3D2A1A',
+                }
 			},
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],
@@ -96,7 +103,7 @@ export default {
 				'leaf-fall': 'leaf-fall 10s ease-in-out infinite'
 			},
 			backgroundImage: {
-				'autumn-gradient': 'linear-gradient(to right, #E67E22, #C0392B)',
+				'autumn-gradient': 'linear-gradient(to right, #A3B18A, #A84632)',
 			}
 		}
 	},

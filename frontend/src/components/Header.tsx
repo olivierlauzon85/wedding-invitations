@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import LanguageSwitcher from './LanguageSwitcher';
@@ -30,18 +31,21 @@ const Header: React.FC = () => {
     >
       <div className="container-wedding flex justify-between items-center">
         <Link to="/" className="flex items-center space-x-2">
-          <Calendar className="h-6 w-6 text-fall-orange" />
-          <span className="font-serif text-xl text-fall-orange">J&O</span>
+          <Calendar className="h-6 w-6 text-autumn-rust" />
+          <span className="font-serif text-xl text-autumn-rust">J&O</span>
         </Link>
 
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#home" className="text-fall-red hover:text-fall-orange transition-colors">
+          <a href="#home" className="text-autumn-burgundy hover:text-autumn-rust transition-colors">
             {t('nav.home')}
           </a>
-          <a href="#info" className="text-fall-red hover:text-fall-orange transition-colors">
+          <a href="#info" className="text-autumn-burgundy hover:text-autumn-rust transition-colors">
             {t('nav.info')}
           </a>
-          <a href="#rsvp" className="text-fall-red hover:text-fall-orange transition-colors">
+          <a href="#qa" className="text-autumn-burgundy hover:text-autumn-rust transition-colors">
+            {t('nav.qa')}
+          </a>
+          <a href="#rsvp" className="text-autumn-burgundy hover:text-autumn-rust transition-colors">
             {t('nav.rsvp')}
           </a>
         </nav>

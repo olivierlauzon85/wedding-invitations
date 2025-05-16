@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import HeroSection from '../components/HeroSection';
 import WeddingInfo from '../components/WeddingInfo';
 import RsvpForm from '../components/RsvpForm';
+import QandASection from '../components/QandASection';
 import Footer from '../components/Footer';
 
 const Index = () => {
@@ -15,6 +16,7 @@ const Index = () => {
         <main>
           <HeroSection />
           <WeddingInfo />
+          <QandASection />
           <RsvpForm />
         </main>
         <Footer />
