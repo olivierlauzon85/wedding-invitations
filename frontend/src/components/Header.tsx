@@ -42,11 +42,11 @@ const Header: React.FC = () => {
           <a href="#info" className="text-autumn-burgundy hover:text-autumn-rust transition-colors border-b-2 border-transparent hover:border-autumn-sage pb-1">
             {t('nav.info')}
           </a>
-          <a href="#qa" className="text-autumn-burgundy hover:text-autumn-rust transition-colors border-b-2 border-transparent hover:border-autumn-sage pb-1">
-            {t('nav.qa')}
-          </a>
           <a href="#rsvp" className="text-autumn-burgundy hover:text-autumn-rust transition-colors border-b-2 border-transparent hover:border-autumn-sage pb-1">
             {t('nav.rsvp')}
+          </a>
+          <a href="#qa" className="text-autumn-burgundy hover:text-autumn-rust transition-colors border-b-2 border-transparent hover:border-autumn-sage pb-1">
+            {t('nav.qa')}
           </a>
         </nav>
 

@@ -1,7 +1,6 @@
-
 import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
-import { Calendar, Clock, MapPin, Home } from 'lucide-react';
+import { Calendar, Clock, MapPin, Home, Baby, Cannabis, SunSnow, CalendarHeart, Beer, WineOff } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 
 const WeddingInfo: React.FC = () => {
@@ -17,23 +16,34 @@ const WeddingInfo: React.FC = () => {
             <Calendar className="mr-2 text-fall-red" />
             <p className="text-xl font-serif text-fall-red">{t('info.date')}</p>
           </div>
+          <div className="flex justify-center items-center mb-4">
+            <MapPin className="mr-2 text-fall-red" />
+            <p className="text-xl font-serif text-fall-red">{t('info.location')}</p>
+          </div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <Card className="border-fall-orange/20 bg-white/80 backdrop-blur-sm">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <Card className="border-autumn-sage/20 bg-white/80 backdrop-blur-sm">
             <CardHeader className="pb-2">
-              <CardTitle className="text-fall-orange font-serif text-2xl flex items-center">
+              <CardTitle className="text-autumn-sage font-serif text-2xl flex items-center">
                 <Clock className="mr-2 h-5 w-5" />
                 {t('info.ceremony.title')}
               </CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-lg font-medium">{t('info.ceremony.time')}</p>
-              <p className="font-serif text-xl mt-2">{t('info.ceremony.location')}</p>
-              <p className="flex items-center mt-2 text-muted-foreground">
-                <MapPin className="h-4 w-4 mr-1" />
-                {t('info.ceremony.address')}
-              </p>
+            </CardContent>
+          </Card>
+
+          <Card className="border-fall-orange/20 bg-white/80 backdrop-blur-sm">
+            <CardHeader className="pb-2">
+              <CardTitle className="text-fall-orange font-serif text-2xl flex items-center">
+                <Clock className="mr-2 h-5 w-5" />
+                {t('info.cocktail.title')}
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-lg font-medium">{t('info.cocktail.time')}</p>
             </CardContent>
           </Card>
           
@@ -46,13 +56,38 @@ const WeddingInfo: React.FC = () => {
             </CardHeader>
             <CardContent>
               <p className="text-lg font-medium">{t('info.reception.time')}</p>
-              <p className="font-serif text-xl mt-2">{t('info.reception.location')}</p>
-              <p className="flex items-center mt-2 text-muted-foreground">
-                <MapPin className="h-4 w-4 mr-1" />
-                {t('info.reception.address')}
-              </p>
             </CardContent>
           </Card>
+        </div>
+
+        <div className="mt-12">
+          <h2 className="section-title mb-12">{t('info.note')}</h2>
+          <ul className="space-y-4 max-w-2xl mx-auto text-justify">
+            <li className="text-fall-red flex items-center space-x-3 rtl:space-x-reverse">
+              <Clock style={{ minWidth: '16px', minHeight: '16px' }} />
+              <span className="text-xl font-serif">{t('info.note.1')}</span>
+            </li>
+            <li className="text-fall-red flex items-center space-x-3 rtl:space-x-reverse">
+            <SunSnow style={{ minWidth: '16px', minHeight: '16px' }} />
+              <span className="text-xl font-serif">{t('info.note.2')}</span>
+            </li>
+            <li className="text-fall-red flex items-center space-x-3 rtl:space-x-reverse">
+            <Baby style={{ minWidth: '16px', minHeight: '16px' }} />
+              <span className="text-xl font-serif">{t('info.note.3')}</span>
+            </li>
+            <li className="text-fall-red flex items-center space-x-3 rtl:space-x-reverse">
+            <WineOff style={{ minWidth: '16px', minHeight: '16px' }} />
+              <span className="text-xl font-serif">{t('info.note.4')}</span>
+            </li>
+            <li className="text-fall-red flex items-center space-x-3 rtl:space-x-reverse">
+            <Cannabis style={{ minWidth: '16px', minHeight: '16px' }} />
+              <span className="text-xl font-serif">{t('info.note.5')}</span>
+            </li>
+            <li className="text-fall-red flex items-center space-x-3 rtl:space-x-reverse">
+            <CalendarHeart style={{ minWidth: '16px', minHeight: '16px' }} />
+              <span className="text-xl font-serif">{t('info.note.6')}</span>
+            </li>
+          </ul>
         </div>
       </div>
     </section>

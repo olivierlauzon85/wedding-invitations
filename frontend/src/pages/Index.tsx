@@ -17,8 +17,8 @@ const Index = () => {
           <HeroSection />
           <div className="bg-gradient-to-b from-white to-autumn-lightsage/30">
             <WeddingInfo />
-            <QandASection />
             <RsvpForm />
+            <QandASection />
           </div>
         </main>
         <Footer />
