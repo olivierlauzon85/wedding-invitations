@@ -54,7 +54,7 @@ const HeroSection: React.FC = () => {
           
           <CountdownTimer />
           
-          <div className="mt-12 flex justify-center space-x-4 animate-fade-in" style={{animationDelay: '0.8s'}}>
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-4 gap-4 animate-fade-in" style={{animationDelay: '0.8s'}}>
             <a href="#info" className="btn-primary">
               {t('nav.info')}
             </a>

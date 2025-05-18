@@ -34,7 +34,7 @@ export const translations: TranslationsType = {
 
     // Wedding Info
     'info.title': 'Our Wedding Day',
-    'info.date': 'Friday, October 10th, 2026',
+    'info.date': 'Saturday, October 10th, 2026',
     'info.location': 'Salles de réception Lalande, 862 Montée Laurin, Saint-Eustache, QC J7R 4K3',
     'info.ceremony.title': 'Ceremony',
     'info.ceremony.time': '3:30 PM',
@@ -132,7 +132,7 @@ export const translations: TranslationsType = {
 
     // Wedding Info
     'info.title': 'Notre Jour de Mariage',
-    'info.date': 'Vendredi, 10 octobre 2026',
+    'info.date': 'Samedi, 10 octobre 2026',
     'info.location': 'Salles de réception Lalande, 862 Montée Laurin, Saint-Eustache, QC J7R 4K3',
     'info.ceremony.title': 'Cérémonie',
     'info.ceremony.time': '15h30',

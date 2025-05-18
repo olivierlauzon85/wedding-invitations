@@ -13,11 +13,11 @@ const WeddingInfo: React.FC = () => {
         
         <div className="mb-10 text-center">
           <div className="flex justify-center items-center mb-4">
-            <Calendar className="mr-2 text-fall-red" />
+            <Calendar style={{ minWidth: '24px', minHeight: '24px' }} className="mr-2 text-fall-red" />
             <p className="text-xl font-serif text-fall-red">{t('info.date')}</p>
           </div>
           <div className="flex justify-center items-center mb-4">
-            <MapPin className="mr-2 text-fall-red" />
+            <MapPin style={{ minWidth: '24px', minHeight: '24px' }} className="mr-2 text-fall-red" />
             <p className="text-xl font-serif text-fall-red">{t('info.location')}</p>
           </div>
         </div>
