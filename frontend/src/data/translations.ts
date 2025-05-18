@@ -53,30 +53,32 @@ export const translations: TranslationsType = {
     // Q&A Section
     'qa.title': 'Questions & Answers',
     'qa.categories.accommodation': 'Accommodation',
-    'qa.categories.travel': 'Travel & Parking',
+    'qa.categories.clothing': 'Dress Code',
+    'qa.categories.parking': 'Parking',
     'qa.categories.gifts': 'Gifts & Registry',
-    'qa.categories.schedule': 'Schedule & Events',
+    'qa.categories.drinks': 'Drinks',
 
     'qa.accommodation.q1': 'Are there recommended hotels nearby?',
     'qa.accommodation.a1': 'Yes, we have arranged special rates with Hotel XYZ (10 minutes from the venue) and ABC Hotel (15 minutes from the venue). Please mention our wedding when booking to receive the discounted rate.',
 
-    'qa.accommodation.q2': 'Is there transportation from the hotels to the venue?',
-    'qa.accommodation.a2': 'We will be providing a shuttle service from both recommended hotels to the venue and back. The schedule will be shared closer to the wedding date.',
 
-    'qa.travel.q1': 'Where can I park?',
-    'qa.travel.a1': 'There is free parking available at the venue for all guests. There are approximately 100 spots available.',
+    'qa.clothing.q1': 'What is the dress code?',
+    'qa.clothing.a1': 'To preserve the harmony of the colors, we ask you to avoid white and green for your outfits since they are reserved for the bride and groom and the bridal party.',
 
-    'qa.travel.q2': 'What\'s the best way to get to the venue?',
-    'qa.travel.a2': 'The venue is easily accessible by car from Highway 50. If you\'re coming from out of town, we recommend flying into Montreal-Trudeau Airport and renting a car or taking a taxi (approximately 45 minutes to the venue).',
+    'qa.parking.q1': 'Where can I park?',
+    'qa.parking.a1': 'The erablière is very accessible by car. Parking is available on site in large numbers. Upon arrival, parking is on your left, while the domain will be on your right. We recommend following these directions for easy and quick access.',
 
     'qa.gifts.q1': 'Do you have a gift registry?',
-    'qa.gifts.a1': 'Your presence is the greatest gift! However, if you wish to honor us with a gift, we have created a registry at [Registry Name]. Alternatively, a contribution to our honeymoon fund would be deeply appreciated.',
+    'qa.gifts.a1': 'Your presence is the best gift! However, if you would like to honor us with a gift, we encourage you to give us a cash amount at your discretion.',
 
-    'qa.schedule.q1': 'What\'s the dress code?',
-    'qa.schedule.a1': 'The dress code is formal/semi-formal. We recommend suits for men and cocktail dresses for women. The venue is indoors but we will have some outdoor activities, so please dress accordingly.',
+    'qa.drinks.q1': 'What drinks will be available?',
+    'qa.drinks.a1': 'We have everything you need to quench your thirst: wine, domestic beer, and non-alcoholic drinks (soft drinks and other) will be offered at will, from cocktails to the end of the evening. All other alcoholic drinks (spirits, cocktails) will need to be purchased on site.',
 
-    'qa.schedule.q2': 'What time does the wedding end?',
-    'qa.schedule.a2': 'The reception will conclude at 1:00 AM. After-party details will be shared during the reception for those who wish to continue the celebration!',
+    'qa.drinks.q2': 'Do I need to bring cash?',
+    'qa.drinks.a2': 'If you would like a type of cocktail other than wine, beer, or non-alcoholic drinks, you will need to bring cash to cover the costs.',
+
+    'qa.drinks.q3': 'Can I bring my own drinks?',
+    'qa.drinks.a3': 'No, no drinks from outside will be allowed on site.',
 
     // RSVP
     'rsvp.title': 'RSVP',
@@ -169,30 +171,31 @@ export const translations: TranslationsType = {
     // Q&A Section
     'qa.title': 'Questions & Réponses',
     'qa.categories.accommodation': 'Hébergement',
-    'qa.categories.travel': 'Transport & Stationnement',
+    'qa.categories.clothing': 'Tenue vestimentaire',
+    'qa.categories.parking': 'Stationnement',
     'qa.categories.gifts': 'Cadeaux & Registre',
-    'qa.categories.schedule': 'Horaire & Événements',
+    'qa.categories.drinks': 'Boissons',
 
     'qa.accommodation.q1': 'Y a-t-il des hôtels recommandés à proximité?',
-    'qa.accommodation.a1': 'Oui, nous avons négocié des tarifs spéciaux avec l\'Hôtel XYZ (à 10 minutes du lieu) et l\'Hôtel ABC (à 15 minutes du lieu). Veuillez mentionner notre mariage lors de la réservation pour bénéficier du tarif réduit.',
+    'qa.accommodation.a1': 'Bien qu\'aucun hébergement ne soit disponible sur place, un hôtel est situé à seulement 10 km du lieu du mariage, idéal pour ceux qui viennent de plus loin. La location de chambre est à votre entière discrétion. Vous pouvez réserver à l\'Impéria Hôtel & Suites St-Eustache, situé au 570 R. Dubois, Saint-Eustache, Québec, J7P 0B3, ou en visitant leur site web : https://imperiahotel.com/eustache/.',
 
-    'qa.accommodation.q2': 'Y a-t-il un transport des hôtels vers le lieu de réception?',
-    'qa.accommodation.a2': 'Nous fournirons un service de navette depuis les deux hôtels recommandés vers le lieu de réception et retour. L\'horaire sera communiqué à l\'approche de la date du mariage.',
+    'qa.clothing.q1': 'Quel est le code vestimentaire?',
+    'qa.clothing.a1': 'Afin de préserver l\'harmonie des couleurs, nous vous demandons d\'éviter le blanc et le vert pour vos tenues puisqu\'elles sont réservées aux mariés et au cortège.',
 
-    'qa.travel.q1': 'Où puis-je me garer?',
-    'qa.travel.a1': 'Un stationnement gratuit est disponible sur place pour tous les invités. Il y a environ 100 places disponibles.',
-
-    'qa.travel.q2': 'Quel est le meilleur moyen de se rendre au lieu de réception?',
-    'qa.travel.a2': 'Le lieu est facilement accessible en voiture depuis l\'autoroute 50. Si vous venez de l\'extérieur de la ville, nous vous recommandons d\'atterrir à l\'aéroport Montréal-Trudeau et de louer une voiture ou prendre un taxi (environ 45 minutes jusqu\'au lieu).',
+    'qa.parking.q1': 'Où puis-je me garer?',
+    'qa.parking.a1': 'L\'érablière est très accessible en voiture. Le stationnement est disponible sur place en grand nombre. À votre arrivée, le stationnement se trouve sur votre gauche, tandis que le domaine sera sur votre droite. Nous vous recommandons de suivre ces indications pour un accès facile et rapide.',
 
     'qa.gifts.q1': 'Avez-vous un registre de cadeaux?',
-    'qa.gifts.a1': 'Votre présence est le plus beau des cadeaux! Cependant, si vous souhaitez nous honorer d\'un cadeau, nous avons créé un registre chez [Nom du Registre]. Alternativement, une contribution à notre fonds de lune de miel serait profondément appréciée.',
+    'qa.gifts.a1': 'Votre présence est le plus beau des cadeaux! Cependant, si vous souhaitez nous honorer d\'un cadeau, nous vous encourageons à nous offrir un montant d\'argent à votre discrétion.',
 
-    'qa.schedule.q1': 'Quel est le code vestimentaire?',
-    'qa.schedule.a1': 'Le code vestimentaire est formel/semi-formel. Nous recommandons des costumes pour les hommes et des robes de cocktail pour les femmes. Le lieu est intérieur mais nous aurons quelques activités extérieures, alors habillez-vous en conséquence.',
+    'qa.drinks.q1': 'Quelles boissons seront disponibles?',
+    'qa.drinks.a1': 'Nous avons prévu tout ce qu\'il faut pour étancher votre soif : le vin, la bière domestique ainsi que les boissons non alcoolisées (boissons gazeuses et autres) seront offerts à volonté, du cocktail jusqu\'à la fin de la soirée. Toutes les autres boissons alcoolisées (spiritueux, cocktails) devront être achetées sur place.',
 
-    'qa.schedule.q2': 'À quelle heure se termine le mariage?',
-    'qa.schedule.a2': 'La réception se terminera à 1h00 du matin. Les détails de l\'after-party seront communiqués pendant la réception pour ceux qui souhaitent continuer la célébration!',
+    'qa.drinks.q2': 'Dois-je me prévoir de l\'argent comptant?',
+    'qa.drinks.a2': 'Si vous désirez un type de cocktail autre que le vin, la bière ou les boissons non alcoolisées, il vous faudra de l\'argent comptant pour couvrir les frais.',
+
+    'qa.drinks.q3': 'Puis-je apporter mes propres boissons?',
+    'qa.drinks.a3': 'Non, aucune boisson provenant de l\'extérieur ne sera tolérée sur le site.',
 
     // RSVP
     'rsvp.title': 'RSVP',

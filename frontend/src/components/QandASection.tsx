@@ -35,22 +35,23 @@ const QandASection: React.FC = () => {
           question: 'qa.accommodation.q1',
           answer: 'qa.accommodation.a1',
         },
+      ]
+    },
+    {
+      name: 'qa.categories.clothing',
+      questions: [
         {
-          question: 'qa.accommodation.q2',
-          answer: 'qa.accommodation.a2',
+          question: 'qa.clothing.q1',
+          answer: 'qa.clothing.a1',
         }
       ]
     },
     {
-      name: 'qa.categories.travel',
+      name: 'qa.categories.parking',
       questions: [
         {
-          question: 'qa.travel.q1',
-          answer: 'qa.travel.a1',
-        },
-        {
-          question: 'qa.travel.q2',
-          answer: 'qa.travel.a2',
+          question: 'qa.parking.q1',
+          answer: 'qa.parking.a1',
         }
       ]
     },
@@ -64,15 +65,19 @@ const QandASection: React.FC = () => {
       ]
     },
     {
-      name: 'qa.categories.schedule',
+      name: 'qa.categories.drinks',
       questions: [
         {
-          question: 'qa.schedule.q1',
-          answer: 'qa.schedule.a1',
+          question: 'qa.drinks.q1',
+          answer: 'qa.drinks.a1',
         },
         {
-          question: 'qa.schedule.q2',
-          answer: 'qa.schedule.a2',
+          question: 'qa.drinks.q2',
+          answer: 'qa.drinks.a2',
+        },
+        {
+          question: 'qa.drinks.q3',
+          answer: 'qa.drinks.a3',
         }
       ]
     }
