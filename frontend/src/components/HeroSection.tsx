@@ -58,6 +58,9 @@ const HeroSection: React.FC = () => {
             <a href="#info" className="btn-primary">
               {t('nav.info')}
             </a>
+            <a href="#menu" className="btn-outline">
+              {t('nav.menu')}
+            </a>
             <a href="#rsvp" className="btn-outline">
               {t('nav.rsvp')}
             </a>

@@ -14,6 +14,7 @@ export const translations: TranslationsType = {
     // Header
     'nav.home': 'Home',
     'nav.info': 'Info',
+    'nav.menu': 'Menu',
     'nav.rsvp': 'RSVP',
     'nav.qa': 'Q&A',
     'nav.gallery': 'Gallery',
@@ -109,6 +110,7 @@ export const translations: TranslationsType = {
     // Header
     'nav.home': 'Accueil',
     'nav.info': 'Information',
+    'nav.menu': 'Menu',
     'nav.rsvp': 'RSVP',
     'nav.qa': 'Q&R',
     'nav.gallery': 'Galerie',
@@ -144,6 +146,25 @@ export const translations: TranslationsType = {
     'info.note.4': 'Afin de respecter le permis d\'alcool en place, l\'	alcool provenant de l\'extérieur ne sera permis en aucun cas sur le site.',
     'info.note.5': 'Pour ceux qui auraient des envies de printemps… nous vous rappelons que la consommation de cannabis n\'est pas permise sur le site. Après tout, nous célébrerons à l\'automne !',
     'info.note.6': 'Que vous soyez des nôtres ou non, nous apprécierions grandement une réponse de votre part avant le 31 mai 2026. Si vous serez présents, merci de nous indiquer également votre choix de repas ainsi que toute allergie ou restriction alimentaire afin que nous puissions en tenir compte.',
+
+    // Menu Section
+    'menu.title': 'Menu',
+    'menu.appetizers.title': 'Entrée',
+    'menu.appetizers.description': 'Bruschetta',
+    'menu.salad.title': 'Salade',
+    'menu.salad.description': 'Salade du printemps, verger et vignoble, et sa vinagrette à l\'érable maison.',
+    'menu.main.title': 'Choix de plat principal',
+    'menu.main.description': 'Un choix parmi les plats suivants:',
+    'menu.main.chicken': 'Poulet',
+    'menu.main.chicken.description': ' Suprême de volaille aux fines herbes, sauce à l\'érable poivrée',
+    'menu.main.fish': 'Poisson',
+    'menu.main.fish.description': 'Pavé de saumon, crème fraîche à l\'aneth',
+    'menu.main.vegetarian': 'Végétarien',
+    'menu.main.vegetarian.description': 'Pâtes au pesto de tomates avec légumes et pois chiches grillés',
+    'menu.dessert.title': 'Dessert',
+    'menu.dessert.description': 'Surprise sucrée du chef',
+
+
 
     // Q&A Section
     'qa.title': 'Questions & Réponses',
