@@ -80,7 +80,7 @@ const MenuSection: React.FC = () => {
               {menu.description && <p className={`text-${menu.color} text-xl font-serif`}>{t(menu.description)}</p>}
               {menu.choices && menu.choices.map((choice, choiceIdx) => (
                 <div key={choiceIdx}>
-                  <h4 className={`text-xl text-${menu.color} flex items-center ml-2`}>
+                  <h4 className={`text-xl font-bold text-${menu.color} flex items-center ml-2`}>
                     {t(choice.name)}
                     <span className="ml-2">{choice.icon}</span>
                   </h4>
