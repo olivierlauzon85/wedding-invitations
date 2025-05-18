@@ -47,7 +47,7 @@ const HeroSection: React.FC = () => {
           <p className="text-xl md:text-2xl text-fall-orange mb-6 animate-fade-in" style={{animationDelay: '0.2s'}}>
             {t('hero.subtitle')}
           </p>
-          <div className="w-24 h-1 bg-fall-orange mx-auto my-8"></div>
+          <div className="w-24 h-1 bg-autumn-sage mx-auto my-8"></div>
           <p className="font-serif text-2xl md:text-3xl lg:text-4xl text-fall-orange mb-2 animate-fade-in" style={{animationDelay: '0.4s'}}>
             {t('hero.date')}
           </p>
