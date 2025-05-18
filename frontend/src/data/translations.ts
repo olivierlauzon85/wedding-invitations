@@ -144,17 +144,17 @@ export const translations: TranslationsType = {
     'info.note': 'À noter',
     'info.note.1': 'Votre présence est attendue pour 15h00, afin d\'être à temps pour le début de la cérémonie qui prendra place à la Pergola, située tout au fond du domaine.',
     'info.note.2': 'La cérémonie se déroulera à l\'extérieur, donc prévoir les vêtements en conséquence. En cas de pluie, la cérémonie se déroulera à l\'intérieur. ',
-    'info.note.3': 'Parents, vous méritez bien une soirée de repos ! Notre mariage sera une célébration réservée aux adultes… Profitez-en pour sortir vos souliers de danse et laisser les petits monstres entre de bonnes mains.',
-    'info.note.4': 'Afin de respecter le permis d\'alcool en place, l\'	alcool provenant de l\'extérieur ne sera permis en aucun cas sur le site.',
+    'info.note.3': 'Parents, vous méritez bien une soirée de repos ! Notre mariage sera une célébration réservée aux adultes… Profitez-en pour sortir vos souliers de danse et laisser les petits monstres entre bonnes mains.',
+    'info.note.4': 'Afin de respecter le permis d\'alcool en place, l\'alcool provenant de l\'extérieur ne sera permis en aucun cas sur le site.',
     'info.note.5': 'Pour ceux qui auraient des envies de printemps… nous vous rappelons que la consommation de cannabis n\'est pas permise sur le site. Après tout, nous célébrerons à l\'automne !',
-    'info.note.6': 'Que vous soyez des nôtres ou non, nous apprécierions grandement une réponse de votre part avant le 31 mai 2026. Si vous serez présents, merci de nous indiquer également votre choix de repas ainsi que toute allergie ou restriction alimentaire afin que nous puissions en tenir compte.',
+    'info.note.6': 'Que vous soyez des nôtres ou non, nous apprécierions grandement une réponse de votre part avant le 31 mai 2026. Si vous prévoyez être présents, merci de nous indiquer également votre choix de repas ainsi que toute allergie ou restriction alimentaire afin que nous puissions en tenir compte.',
 
     // Menu Section
     'menu.title': 'Menu',
     'menu.appetizers.title': 'Entrée',
     'menu.appetizers.description': 'Bruschetta',
     'menu.salad.title': 'Salade',
-    'menu.salad.description': 'Salade du printemps, verger et vignoble, et sa vinagrette à l\'érable maison.',
+    'menu.salad.description': 'Salade du printemps, verger et vignoble, et sa vinagrette à l\'érable maison',
     'menu.main.title': 'Choix de plat principal',
     'menu.main.description': 'Un choix parmi les plats suivants:',
     'menu.main.chicken': 'Poulet',
@@ -180,13 +180,16 @@ export const translations: TranslationsType = {
     'qa.accommodation.a1': 'Bien qu\'aucun hébergement ne soit disponible sur place, un hôtel est situé à seulement 10 km du lieu du mariage, idéal pour ceux qui viennent de plus loin. La location de chambre est à votre entière discrétion. Vous pouvez réserver à l\'Impéria Hôtel & Suites St-Eustache, situé au 570 R. Dubois, Saint-Eustache, Québec, J7P 0B3, ou en visitant leur site web : https://imperiahotel.com/eustache/.',
 
     'qa.clothing.q1': 'Quel est le code vestimentaire?',
-    'qa.clothing.a1': 'Afin de préserver l\'harmonie des couleurs, nous vous demandons d\'éviter le blanc et le vert pour vos tenues puisqu\'elles sont réservées aux mariés et au cortège.',
+    'qa.clothing.a1': 'Il est recommandé de porter des tenues formelles/de ville.',
+
+    'qa.clothing.q2': 'Y a-t-il des couleurs à éviter?',
+    'qa.clothing.a2': 'Afin de préserver l\'harmonie des couleurs, nous vous demandons d\'éviter le blanc et le vert pour vos tenues puisqu\'elles sont réservées aux mariés et au cortège.',
 
     'qa.parking.q1': 'Où puis-je me garer?',
     'qa.parking.a1': 'L\'érablière est très accessible en voiture. Le stationnement est disponible sur place en grand nombre. À votre arrivée, le stationnement se trouve sur votre gauche, tandis que le domaine sera sur votre droite. Nous vous recommandons de suivre ces indications pour un accès facile et rapide.',
 
     'qa.gifts.q1': 'Avez-vous un registre de cadeaux?',
-    'qa.gifts.a1': 'Votre présence est le plus beau des cadeaux! Cependant, si vous souhaitez nous honorer d\'un cadeau, nous vous encourageons à nous offrir un montant d\'argent à votre discrétion.',
+    'qa.gifts.a1': 'Non, nous n\'avons pas de registre de cadeaux. Votre présence est le plus beau des cadeaux! Cependant, si vous souhaitez nous honorer d\'un cadeau, nous vous encourageons à nous offrir un montant d\'argent à votre discrétion.',
 
     'qa.drinks.q1': 'Quelles boissons seront disponibles?',
     'qa.drinks.a1': 'Nous avons prévu tout ce qu\'il faut pour étancher votre soif : le vin, la bière domestique ainsi que les boissons non alcoolisées (boissons gazeuses et autres) seront offerts à volonté, du cocktail jusqu\'à la fin de la soirée. Toutes les autres boissons alcoolisées (spiritueux, cocktails) devront être achetées sur place.',

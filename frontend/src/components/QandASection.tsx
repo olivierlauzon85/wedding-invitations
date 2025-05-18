@@ -43,6 +43,10 @@ const QandASection: React.FC = () => {
         {
           question: 'qa.clothing.q1',
           answer: 'qa.clothing.a1',
+        },
+        {
+          question: 'qa.clothing.q2',
+          answer: 'qa.clothing.a2',
         }
       ]
     },
@@ -99,10 +103,10 @@ const QandASection: React.FC = () => {
                 <Accordion type="single" collapsible className="w-full">
                   {category.questions.map((qa, qIdx) => (
                     <AccordionItem key={qIdx} value={`item-${idx}-${qIdx}`}>
-                      <AccordionTrigger className="text-autumn-rust font-medium">
+                      <AccordionTrigger className="text-autumn-rust font-medium text-left">
                         {t(qa.question)}
                       </AccordionTrigger>
-                      <AccordionContent className="text-gray-700">
+                      <AccordionContent className="text-justify font-serif text-black text-base">
                         {t(qa.answer)}
                       </AccordionContent>
                     </AccordionItem>
