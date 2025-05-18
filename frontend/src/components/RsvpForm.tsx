@@ -9,7 +9,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { useForm } from "react-hook-form";
-import { Check, Plus, User, UserPlus, X } from "lucide-react";
+import { Plus, User, UserPlus, X } from "lucide-react";
 import {
   Form,
   FormControl,

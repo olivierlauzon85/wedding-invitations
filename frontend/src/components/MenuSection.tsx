@@ -1,18 +1,7 @@
 
 import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
-import { 
-  Accordion, 
-  AccordionContent, 
-  AccordionItem, 
-  AccordionTrigger 
-} from '@/components/ui/accordion';
-import { 
-  Collapsible, 
-  CollapsibleContent, 
-  CollapsibleTrigger 
-} from '@/components/ui/collapsible';
-import { ChevronDown, Drumstick, Fish, Vegan } from 'lucide-react';
+import { Drumstick, Fish, Vegan } from 'lucide-react';
 
 type MenuData = {
   name: string;

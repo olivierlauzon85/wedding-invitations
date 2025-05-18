@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
-import { Calendar, Clock, MapPin, Home, Baby, Cannabis, SunSnow, CalendarHeart, Beer, WineOff } from 'lucide-react';
+import { Calendar, Clock, MapPin, Home, Baby, Cannabis, SunSnow, CalendarHeart, WineOff } from 'lucide-react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 
 const WeddingInfo: React.FC = () => {
