@@ -53,21 +53,21 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-                fall: {
-                    orange: '#E67E22',
-                    yellow: '#F4D03F',
-                    red: '#C0392B',
-                    green: '#A3CB38',
-                    pink: '#FFC0CB',
-                },
-                autumn: {
-                    beige: '#CCBBAA',
-                    sage: '#B5C9A1',  // Softened the sage green color
-                    rust: '#A84632',
-                    burgundy: '#7B1A2D',
-                    brown: '#3D2A1A',
-                    lightsage: '#DFE8D5', // Added a lighter sage for subtle accents
-                }
+				fall: {
+					orange: '#E67E22',
+					yellow: '#F4D03F',
+					red: '#C0392B',
+					green: '#8B907C',
+					pink: '#FFC0CB',
+				},
+				autumn: {
+					beige: '#CCBBAA',
+					sage: '#B5C9A1',  // Softened the sage green color
+					rust: '#A84632',
+					burgundy: '#7B1A2D',
+					brown: '#3D2A1A',
+					lightsage: '#DFE8D5', // Added a lighter sage for subtle accents
+				}
 			},
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],

@@ -51,9 +51,6 @@ const HeroSection: React.FC = () => {
           <p className="font-serif text-2xl md:text-3xl lg:text-4xl text-fall-orange mb-2 animate-fade-in" style={{animationDelay: '0.4s'}}>
             {t('hero.date')}
           </p>
-          <p className="text-lg md:text-xl text-fall-red animate-fade-in" style={{animationDelay: '0.6s'}}>
-            {t('hero.location')}
-          </p>
           
           <CountdownTimer />
           
@@ -63,6 +60,9 @@ const HeroSection: React.FC = () => {
             </a>
             <a href="#rsvp" className="btn-outline">
               {t('nav.rsvp')}
+            </a>
+            <a href="#qa" className="btn-outline">
+              {t('nav.qa')}
             </a>
           </div>
         </div>

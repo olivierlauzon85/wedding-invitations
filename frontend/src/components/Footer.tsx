@@ -13,9 +13,6 @@ const Footer: React.FC = () => {
           <Heart className="h-5 w-5 text-fall-red mr-2 animate-pulse" />
           <p className="font-serif text-lg text-fall-red">{t('footer.credits')}</p>
         </div>
-        <p className="text-sm text-muted-foreground">
-          {t('footer.copyright')}
-        </p>
       </div>
     </footer>
   );

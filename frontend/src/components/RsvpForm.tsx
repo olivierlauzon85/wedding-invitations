@@ -266,7 +266,7 @@ const RsvpForm: React.FC = () => {
               </Form>
             ) : (
               <div className="text-center py-10">
-                <h3 className="text-2xl font-serif text-fall-green mb-4">{t('rsvp.thanks')}</h3>
+                <h3 className="text-2xl font-serif text-fall-red mb-4">{t('rsvp.thanks')}</h3>
                 <p className="text-muted-foreground">{form.getValues().attending === 'yes' ? 
                   t('rsvp.attending.yes') : 
                   t('rsvp.attending.no')}</p>

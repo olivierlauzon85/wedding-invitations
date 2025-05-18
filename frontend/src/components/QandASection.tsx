@@ -79,7 +79,7 @@ const QandASection: React.FC = () => {
   ];
 
   return (
-    <section id="qa" className="section-wrapper bg-autumn-lightsage/40">
+    <section id="qa" className="section-wrapper bg-fall-yellow/5">
       <div className="container-wedding">
         <h2 className="section-title mb-12">{t('qa.title')}</h2>
         

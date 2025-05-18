@@ -79,7 +79,7 @@ export const translations: TranslationsType = {
 
     // RSVP
     'rsvp.title': 'RSVP',
-    'rsvp.deadline': 'Please respond by September 1st, 2026',
+    'rsvp.deadline': 'Please respond by May 31st, 2026',
     'rsvp.name': 'Full Name',
     'rsvp.email': 'Email Address',
     'rsvp.attending': 'Will you be attending?',
@@ -175,7 +175,7 @@ export const translations: TranslationsType = {
 
     // RSVP
     'rsvp.title': 'RSVP',
-    'rsvp.deadline': 'Veuillez répondre avant le 1er septembre 2026',
+    'rsvp.deadline': 'Veuillez répondre avant le 31 mai 2026',
     'rsvp.name': 'Nom Complet',
     'rsvp.email': 'Adresse Courriel',
     'rsvp.attending': 'Serez-vous présent?',
