@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -9,7 +9,8 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 import { useForm } from "react-hook-form";
-import { Plus, User, UserPlus, X } from "lucide-react";
+import { Plus, User, UserPlus, X, Loader2 } from "lucide-react";
+import { submitToGoogleForms, type FormSubmissionData } from "@/lib/googleForms";
 import {
   Form,
   FormControl,
@@ -39,11 +40,22 @@ type FormValues = {
   message: string;
 };
 
+// Helper function to get URL parameters
+const getUrlParams = () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  return {
+    name: urlParams.get('name') || '',
+    email: urlParams.get('email') || '',
+    plusOne: urlParams.get('plusOne') || '',
+  };
+};
+
 const RsvpForm: React.FC = () => {
   const { t } = useLanguage();
   const { toast } = useToast();
   const [submitted, setSubmitted] = useState(false);
   const [hasPlusOne, setHasPlusOne] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   
   const form = useForm<FormValues>({
     defaultValues: {
@@ -59,20 +71,71 @@ const RsvpForm: React.FC = () => {
     }
   });
 
+  // Pre-fill form with URL parameters on component mount
+  useEffect(() => {
+    const urlParams = getUrlParams();
+    
+    // Set form values from URL parameters
+    if (urlParams.name) form.setValue('name', decodeURIComponent(urlParams.name));
+    if (urlParams.email) form.setValue('email', decodeURIComponent(urlParams.email));
+    
+    // Handle plus one
+    if (urlParams.plusOne) {
+      setHasPlusOne(true);
+      form.setValue('hasPlusOne', true);
+      
+      if (urlParams.plusOne !== 'true' && urlParams.plusOne !== '1') {
+        // If plusOne parameter contains a name (not just true/1)
+        form.setValue('plusOneName', decodeURIComponent(urlParams.plusOne));
+      }
+    }
+  }, [form]);
+
   const attending = form.watch('attending');
 
-  const onSubmit = (data: FormValues) => {
-    console.log('Form submitted:', data);
+  const onSubmit = async (data: FormValues) => {
+    setIsSubmitting(true);
     
-    // Show success message
-    toast({
-      title: t('rsvp.thanks'),
-      description: `${data.name}, ${data.attending === 'yes' ? 
-        t('rsvp.attending.yes').toLowerCase() : 
-        t('rsvp.attending.no').toLowerCase()}`,
-    });
-    
-    setSubmitted(true);
+    try {
+      // Prepare data for Google Forms
+      const submissionData: FormSubmissionData = {
+        name: data.name,
+        email: data.email,
+        attending: data.attending,
+        meal: data.meal,
+        hasPlusOne: data.hasPlusOne,
+        plusOneName: data.plusOneName,
+        plusOneMeal: data.plusOneMeal,
+        dietary: data.dietary,
+        message: data.message,
+      };
+
+      // Submit to Google Forms
+      const success = await submitToGoogleForms(submissionData);
+      
+      if (success) {
+        // Show success message
+        toast({
+          title: t('rsvp.thanks'),
+          description: `${data.name}, ${data.attending === 'yes' ? 
+            t('rsvp.attending.yes').toLowerCase() : 
+            t('rsvp.attending.no').toLowerCase()}`,
+        });
+        
+        setSubmitted(true);
+      } else {
+        throw new Error('Submission failed');
+      }
+    } catch (error) {
+      console.error('Error submitting RSVP:', error);
+      toast({
+        title: "Error",
+        description: "There was an error submitting your RSVP. Please try again.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const togglePlusOne = () => {
@@ -258,9 +321,17 @@ const RsvpForm: React.FC = () => {
                   
                   <Button 
                     type="submit" 
-                    className="w-full bg-fall-orange hover:bg-fall-red text-white"
+                    disabled={isSubmitting}
+                    className="w-full bg-fall-orange hover:bg-fall-red text-white disabled:opacity-50"
                   >
-                    {t('rsvp.submit')}
+                    {isSubmitting ? (
+                      <>
+                        <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                        Submitting...
+                      </>
+                    ) : (
+                      t('rsvp.submit')
+                    )}
                   </Button>
                 </form>
               </Form>
