@@ -63,7 +63,10 @@ export const translations: TranslationsType = {
 
 
     'qa.clothing.q1': 'What is the dress code?',
-    'qa.clothing.a1': 'To preserve the harmony of the colors, we ask you to avoid white and green for your outfits since they are reserved for the bride and groom and the bridal party.',
+    'qa.clothing.a1': 'It is recommended to wear formal/city attire.',
+
+    'qa.clothing.q2': 'Are there colors to avoid?',
+    'qa.clothing.a2': 'To preserve the harmony of the colors, we ask you to avoid white and green for your outfits since they are reserved for the bride and groom and the bridal party.',
 
     'qa.parking.q1': 'Where can I park?',
     'qa.parking.a1': 'The erablière is very accessible by car. Parking is available on site in large numbers. Upon arrival, parking is on your left, while the domain will be on your right. We recommend following these directions for easy and quick access.',
@@ -79,6 +82,23 @@ export const translations: TranslationsType = {
 
     'qa.drinks.q3': 'Can I bring my own drinks?',
     'qa.drinks.a3': 'No, no drinks from outside will be allowed on site.',
+
+    // Menu Section
+    'menu.title': 'Menu',
+    'menu.appetizers.title': 'Appetizers',
+    'menu.appetizers.description': 'Bruschetta',
+    'menu.salad.title': 'Salad',
+    'menu.salad.description': 'Spring salad, orchard and vineyard, with homemade maple vinaigrette',
+    'menu.main.title': 'Main Course Selection',
+    'menu.main.description': 'A choice among the following dishes:',
+    'menu.main.chicken': 'Chicken',
+    'menu.main.chicken.description': 'Herb-crusted chicken breast with peppered maple sauce',
+    'menu.main.fish': 'Fish',
+    'menu.main.fish.description': 'Salmon fillet with fresh dill cream',
+    'menu.main.vegetarian': 'Vegetarian',
+    'menu.main.vegetarian.description': 'Tomato pesto pasta with vegetables and grilled chickpeas',
+    'menu.dessert.title': 'Dessert',
+    'menu.dessert.description': 'Chef\'s sweet surprise',
 
     // RSVP
     'rsvp.title': 'RSVP',
