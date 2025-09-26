@@ -104,6 +104,13 @@ export const translations: TranslationsType = {
     'rsvp.plusOne.name': 'Guest Name',
     'rsvp.plusOne.meal': 'Guest Meal Preference',
 
+    // Welcome Modal
+    'welcome.title': 'Welcome!',
+    'welcome.subtitle': 'Janie & Olivier',
+    'welcome.greeting': 'Welcome to Our Wedding Website',
+    'welcome.message': 'We are so excited to celebrate our special day with you! Explore our website to find all the information you need about our wedding celebration.',
+    'welcome.enter': 'Enter Site',
+
     // Footer
     'footer.credits': 'With love, Janie & Olivier',
     'footer.copyright': '© 2025 Janie & Olivier'
@@ -223,6 +230,13 @@ export const translations: TranslationsType = {
     'rsvp.plusOne.toggle': 'Ajouter un Invité (+1)',
     'rsvp.plusOne.name': 'Nom de l\'Invité',
     'rsvp.plusOne.meal': 'Préférence de Repas de l\'Invité',
+
+    // Welcome Modal
+    'welcome.title': 'Bienvenue!',
+    'welcome.subtitle': 'Janie & Olivier',
+    'welcome.greeting': 'Bienvenue sur notre site de mariage',
+    'welcome.message': 'Nous sommes si excités de célébrer notre jour spécial avec vous! Explorez notre site web pour trouver toutes les informations dont vous avez besoin sur notre célébration de mariage.',
+    'welcome.enter': 'Entrer sur le site',
 
     // Footer
     'footer.credits': 'Avec amour, Janie & Olivier',
