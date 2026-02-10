@@ -57,6 +57,15 @@ const RsvpForm: React.FC = () => {
   const [hasPlusOne, setHasPlusOne] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   
+  const isRsvpClosed = () => {
+    const deadline = new Date('2026-06-01');
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    return today >= deadline;
+  };
+  
+  const rsvpClosed = isRsvpClosed();
+  
   const form = useForm<FormValues>({
     defaultValues: {
       name: '',
@@ -157,7 +166,12 @@ const RsvpForm: React.FC = () => {
             <CardTitle className="font-serif text-fall-red text-2xl text-center">{t('rsvp.title')}</CardTitle>
           </CardHeader>
           <CardContent>
-            {!submitted ? (
+            {rsvpClosed ? (
+              <div className="text-center py-10">
+                <h3 className="text-2xl font-serif text-fall-red mb-4">{t('rsvp.closed.title')}</h3>
+                <p className="text-muted-foreground">{t('rsvp.closed.message')}</p>
+              </div>
+            ) : !submitted ? (
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                   <FormField
@@ -297,7 +311,7 @@ const RsvpForm: React.FC = () => {
                             <FormControl>
                               <Input {...field} />
                             </FormControl>
-                            <FormDescription>{t('rsvp.dietary.description')}</FormDescription>
+                            <FormDescription className="whitespace-pre-line">{t('rsvp.dietary.description')}</FormDescription>
                           </FormItem>
                         )}
                       />

@@ -69,6 +69,15 @@ const QandASection: React.FC = () => {
       ]
     },
     {
+      name: 'qa.categories.meal',
+      questions: [
+        {
+          question: 'qa.meal.q1',
+          answer: 'qa.meal.a1',
+        }
+      ]
+    },
+    {
       name: 'qa.categories.drinks',
       questions: [
         {

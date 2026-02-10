@@ -56,10 +56,11 @@ export const translations: TranslationsType = {
     'qa.categories.clothing': 'Dress Code',
     'qa.categories.parking': 'Parking',
     'qa.categories.gifts': 'Gifts & Registry',
+    'qa.categories.meal': 'Meal Choice',
     'qa.categories.drinks': 'Drinks',
 
     'qa.accommodation.q1': 'Are there recommended hotels nearby?',
-    'qa.accommodation.a1': 'Yes, we have arranged special rates with Hotel XYZ (10 minutes from the venue) and ABC Hotel (15 minutes from the venue). Please mention our wedding when booking to receive the discounted rate.',
+    'qa.accommodation.a1': 'While no accommodation is available on site, a hotel is located just 10 km from the wedding venue, ideal for those coming from further away. Room booking is entirely at your discretion. You can book at Impéria Hôtel & Suites St-Eustache, located at 570 R. Dubois, Saint-Eustache, Québec, J7P 0B3, or by visiting their website: https://imperiahotel.com/eustache/.',
 
 
     'qa.clothing.q1': 'What is the dress code?',
@@ -72,7 +73,10 @@ export const translations: TranslationsType = {
     'qa.parking.a1': 'The erablière is very accessible by car. Parking is available on site in large numbers. Upon arrival, parking is on your left, while the domain will be on your right. We recommend following these directions for easy and quick access.',
 
     'qa.gifts.q1': 'Do you have a gift registry?',
-    'qa.gifts.a1': 'Your presence is the best gift! However, if you would like to honor us with a gift, we encourage you to give us a cash amount at your discretion.',
+    'qa.gifts.a1': 'No, we do not have a gift registry. Your presence by our side is the most beautiful gift! However, if you would like to give us a present, a monetary contribution at your discretion would be greatly appreciated.',
+
+    'qa.meal.q1': 'Will it be possible to modify my meal choice after responding to the RSVP?',
+    'qa.meal.a1': 'Unfortunately, no. Once your meal choice is indicated in the RSVP, it will be considered final. Please take the time to think carefully before making your selection.',
 
     'qa.drinks.q1': 'What drinks will be available?',
     'qa.drinks.a1': 'We have everything you need to quench your thirst: wine, domestic beer, and non-alcoholic drinks (soft drinks and other) will be offered at will, from cocktails to the end of the evening. All other alcoholic drinks (spirits, cocktails) will need to be purchased on site.',
@@ -122,6 +126,8 @@ export const translations: TranslationsType = {
     'rsvp.plusOne.toggle': 'Add Guest (+1)',
     'rsvp.plusOne.name': 'Guest Name',
     'rsvp.plusOne.meal': 'Guest Meal Preference',
+    'rsvp.closed.title': 'RSVP Closed',
+    'rsvp.closed.message': 'The deadline for RSVP responses has now ended. Please contact Janie or Olivier for more information.',
 
     // Welcome Modal
     'welcome.title': 'Welcome!',
@@ -173,14 +179,14 @@ export const translations: TranslationsType = {
     'info.note.3': 'Parents, vous méritez bien une soirée de repos ! Notre mariage sera une célébration réservée aux adultes… Profitez-en pour sortir vos souliers de danse et laisser les petits monstres entre bonnes mains.',
     'info.note.4': 'Afin de respecter le permis d\'alcool en place, l\'alcool provenant de l\'extérieur ne sera permis en aucun cas sur le site.',
     'info.note.5': 'Pour ceux qui auraient des envies de printemps… nous vous rappelons que la consommation de cannabis n\'est pas permise sur le site. Après tout, nous célébrerons à l\'automne !',
-    'info.note.6': 'Que vous soyez des nôtres ou non, nous apprécierions grandement une réponse de votre part avant le 31 mai 2026. Si vous prévoyez être présents, merci de nous indiquer également votre choix de repas ainsi que toute allergie ou restriction alimentaire afin que nous puissions en tenir compte.',
+    'info.note.6': 'Que vous puissiez être des nôtres ou non, nous vous serions très reconnaissants de bien vouloir nous répondre avant le 31 mai 2026 en complétant la section RSVP ci-dessous. Si vous prévoyez y assister, merci de nous indiquer également votre choix de repas, ainsi que toute allergie ou restriction alimentaire, afin que nous puissions en tenir compte.',
 
     // Menu Section
     'menu.title': 'Menu',
     'menu.appetizers.title': 'Entrée',
     'menu.appetizers.description': 'Bruschetta',
     'menu.salad.title': 'Salade',
-    'menu.salad.description': 'Salade du printemps, verger et vignoble, et sa vinagrette à l\'érable maison',
+    'menu.salad.description': 'Salade du printemps, verger et vignoble, et sa vinaigrette à l\'érable maison',
     'menu.main.title': 'Choix de plat principal',
     'menu.main.description': 'Un choix parmi les plats suivants:',
     'menu.main.chicken': 'Poulet',
@@ -200,6 +206,7 @@ export const translations: TranslationsType = {
     'qa.categories.clothing': 'Tenue vestimentaire',
     'qa.categories.parking': 'Stationnement',
     'qa.categories.gifts': 'Cadeaux & Registre',
+    'qa.categories.meal': 'Choix du repas',
     'qa.categories.drinks': 'Boissons',
 
     'qa.accommodation.q1': 'Y a-t-il des hôtels recommandés à proximité?',
@@ -215,7 +222,10 @@ export const translations: TranslationsType = {
     'qa.parking.a1': 'L\'érablière est très accessible en voiture. Le stationnement est disponible sur place en grand nombre. À votre arrivée, le stationnement se trouve sur votre gauche, tandis que le domaine sera sur votre droite. Nous vous recommandons de suivre ces indications pour un accès facile et rapide.',
 
     'qa.gifts.q1': 'Avez-vous un registre de cadeaux?',
-    'qa.gifts.a1': 'Non, nous n\'avons pas de registre de cadeaux. Votre présence est le plus beau des cadeaux! Cependant, si vous souhaitez nous honorer d\'un cadeau, nous vous encourageons à nous offrir un montant d\'argent à votre discrétion.',
+    'qa.gifts.a1': 'Non, nous n\'avons pas de registre de cadeaux. Votre présence à nos côtés est le plus beau des cadeaux ! Si vous souhaitez toutefois nous offrir un présent, une contribution monétaire à votre discrétion serait grandement appréciée.',
+
+    'qa.meal.q1': 'Sera-t-il possible de modifier mon choix de repas après avoir répondu au RSVP ?',
+    'qa.meal.a1': 'Malheureusement, non. Une fois votre choix de repas indiqué dans le RSVP, celui-ci sera considéré comme définitif. Merci de prendre le temps de bien réfléchir avant de faire votre sélection.',
 
     'qa.drinks.q1': 'Quelles boissons seront disponibles?',
     'qa.drinks.a1': 'Nous avons prévu tout ce qu\'il faut pour étancher votre soif : le vin, la bière domestique ainsi que les boissons non alcoolisées (boissons gazeuses et autres) seront offerts à volonté, du cocktail jusqu\'à la fin de la soirée. Toutes les autres boissons alcoolisées (spiritueux, cocktails) devront être achetées sur place.',
@@ -236,7 +246,7 @@ export const translations: TranslationsType = {
     'rsvp.attending.no': 'Désolé, je ne pourrai pas y assister',
     'rsvp.guests': 'Nombre d\'invités (vous inclus)',
     'rsvp.dietary': 'Restrictions Alimentaires',
-    'rsvp.dietary.description': 'Veuillez nous informer de toute allergie ou restriction alimentaire',
+    'rsvp.dietary.description': 'Veuillez nous informer de toute allergie ou restriction alimentaire.\nSi cela concerne uniquement l\'un des deux plats choisis (par vous ou votre invité.e, le cas échéant), merci de préciser à quel plat cela s\'applique.',
     'rsvp.message': 'Message pour le couple (optionnel)',
     'rsvp.submit': 'Envoyer RSVP',
     'rsvp.thanks': 'Merci pour votre réponse!',
@@ -248,6 +258,8 @@ export const translations: TranslationsType = {
     'rsvp.plusOne.toggle': 'Ajouter un Invité (+1)',
     'rsvp.plusOne.name': 'Nom de l\'Invité',
     'rsvp.plusOne.meal': 'Préférence de Repas de l\'Invité',
+    'rsvp.closed.title': 'RSVP Fermé',
+    'rsvp.closed.message': 'Le délai pour répondre au RSVP est maintenant terminé. Veuillez contacter Janie ou Olivier pour de plus amples informations.',
 
     // Welcome Modal
     'welcome.title': 'Bienvenue!',
