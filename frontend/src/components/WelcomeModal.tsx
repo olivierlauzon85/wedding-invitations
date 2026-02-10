@@ -14,24 +14,21 @@ const WelcomeModal: React.FC<WelcomeModalProps> = ({ isOpen, onClose }) => {
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="sm:max-w-md max-w-[90vw] mx-auto p-0 overflow-hidden">
-        <div className="relative h-48 sm:h-64 overflow-hidden">
+      <DialogContent className="sm:max-w-3xl max-w-[90vw] mx-auto p-0 overflow-hidden flex flex-col h-[85vh] sm:h-[80vh]">
+        <div className="relative h-[60%] sm:h-[70%] overflow-hidden flex-shrink-0">
           <img 
-            src="mill.jfif" 
+            src="olijanie.jpeg" 
             alt="Wedding venue" 
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/40"></div>
           
-          <div className="absolute inset-0 flex items-center justify-center">
+          {/* Opaque banner at bottom */}
+          <div className="absolute bottom-0 left-0 right-0 bg-black/30 py-6 sm:py-8">
             <div className="text-center px-4">
-              <div className="relative mb-4">
-                <Heart className="h-16 w-16 sm:h-20 sm:w-20 text-white mx-auto drop-shadow-lg" fill="currentColor" />
-              </div>
-              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2 drop-shadow-lg">
+              <h2 className="text-2xl sm:text-3xl font-bold text-white mb-2">
                 {t('welcome.title')}
               </h2>
-              <p className="text-lg sm:text-xl text-white font-medium drop-shadow-lg">
+              <p className="text-lg sm:text-xl text-white font-medium">
                 {t('welcome.subtitle')}
               </p>
             </div>
@@ -39,14 +36,8 @@ const WelcomeModal: React.FC<WelcomeModalProps> = ({ isOpen, onClose }) => {
         </div>
 
         {/* Content */}
-        <div className="p-6 sm:p-8">
-          <DialogHeader className="space-y-4">
-            <DialogTitle className="text-xl sm:text-2xl font-semibold text-center text-gray-800">
-              {t('welcome.greeting')}
-            </DialogTitle>
-          </DialogHeader>
-          
-          <div className="mt-6 space-y-4">
+        <div className="p-6 sm:p-8 h-[40%] sm:h-[30%] overflow-y-auto flex-shrink-0">
+          <div className="space-y-4">
             <p className="text-center text-gray-600 leading-relaxed">
               {t('welcome.message')}
             </p>
