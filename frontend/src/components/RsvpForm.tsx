@@ -227,7 +227,6 @@ const RsvpForm: React.FC = () => {
                                 </SelectTrigger>
                               </FormControl>
                               <SelectContent>
-                                <SelectItem value="beef">{t('rsvp.meal.beef')}</SelectItem>
                                 <SelectItem value="chicken">{t('rsvp.meal.chicken')}</SelectItem>
                                 <SelectItem value="fish">{t('rsvp.meal.fish')}</SelectItem>
                                 <SelectItem value="vegetarian">{t('rsvp.meal.vegetarian')}</SelectItem>
@@ -278,7 +277,6 @@ const RsvpForm: React.FC = () => {
                                     </SelectTrigger>
                                   </FormControl>
                                   <SelectContent>
-                                    <SelectItem value="beef">{t('rsvp.meal.beef')}</SelectItem>
                                     <SelectItem value="chicken">{t('rsvp.meal.chicken')}</SelectItem>
                                     <SelectItem value="fish">{t('rsvp.meal.fish')}</SelectItem>
                                     <SelectItem value="vegetarian">{t('rsvp.meal.vegetarian')}</SelectItem>
