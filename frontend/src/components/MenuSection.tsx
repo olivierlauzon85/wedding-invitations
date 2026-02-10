@@ -21,12 +21,12 @@ const MenuSection: React.FC = () => {
     {
       name: 'menu.appetizers.title',
       description: 'menu.appetizers.description',
-      color: 'autumn-rust',
+      color: 'fall-red',
     },
     {
       name: 'menu.salad.title',
       description: 'menu.salad.description',
-      color: 'autumn-sage',
+      color: 'fall-red',
     },
     {
       name: 'menu.main.title',
@@ -53,7 +53,7 @@ const MenuSection: React.FC = () => {
     {
       name: 'menu.dessert.title',
       description: 'menu.dessert.description',
-      color: 'fall-orange',
+      color: 'fall-red',
     }
   ];
 
@@ -64,7 +64,7 @@ const MenuSection: React.FC = () => {
         
         <div className="max-w-3xl mx-auto">
           {menu.map((menu, idx) => (
-            <div key={idx} className="mb-2">
+            <div style={{paddingBottom: '10px'}} key={idx} className="mb-2">
               <h3 className={`text-2xl text-${menu.color}`}>{t(menu.name)}</h3>
               {menu.description && <p className={`text-${menu.color} text-xl font-serif`}>{t(menu.description)}</p>}
               {menu.choices && menu.choices.map((choice, choiceIdx) => (
