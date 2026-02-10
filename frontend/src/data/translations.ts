@@ -128,7 +128,7 @@ export const translations: TranslationsType = {
     'welcome.title': 'Welcome!',
     'welcome.subtitle': 'Janie & Olivier',
     'welcome.greeting': 'Welcome to Our Wedding Website',
-    'welcome.message': 'We are so excited to celebrate our special day with you! Explore our website to find all the information you need about our wedding celebration.',
+    'welcome.message': 'It is with immense joy that we invite you to celebrate our wedding. This site has been designed to guide you through all the details of this unforgettable day. For any questions, do not hesitate to contact us. Looking forward to celebrating with you!',
     'welcome.enter': 'Enter Site',
 
     // Footer
@@ -255,7 +255,7 @@ export const translations: TranslationsType = {
     'welcome.title': 'Bienvenue!',
     'welcome.subtitle': 'Janie & Olivier',
     'welcome.greeting': 'Bienvenue sur notre site de mariage',
-    'welcome.message': 'Nous sommes si excités de célébrer notre jour spécial avec vous! Explorez notre site web pour trouver toutes les informations dont vous avez besoin sur notre célébration de mariage.',
+    'welcome.message': 'C\'est avec un immense bonheur que nous vous invitons à célébrer notre mariage. Ce site a été conçu pour vous guider à travers tous les détails de cette journée inoubliable. Pour toute question, n’hésitez pas à nous contacter. Au plaisir de célébrer avec vous!',
     'welcome.enter': 'Entrer sur le site',
 
     // Footer
