@@ -128,6 +128,10 @@ export const translations: TranslationsType = {
     'rsvp.plusOne.meal': 'Guest Meal Preference',
     'rsvp.closed.title': 'RSVP Closed',
     'rsvp.closed.message': 'The deadline for RSVP responses has now ended. Please contact Janie or Olivier for more information.',
+    'rsvp.validation.name.required': 'Full name is required',
+    'rsvp.validation.email.required': 'Email is required when attending',
+    'rsvp.validation.email.invalid': 'Please enter a valid email address',
+    'rsvp.validation.attending.required': 'Please indicate if you will be attending',
 
     // Welcome Modal
     'welcome.title': 'Welcome!',
@@ -260,6 +264,10 @@ export const translations: TranslationsType = {
     'rsvp.plusOne.meal': 'Préférence de Repas de l\'Invité',
     'rsvp.closed.title': 'RSVP Fermé',
     'rsvp.closed.message': 'Le délai pour répondre au RSVP est maintenant terminé. Veuillez contacter Janie ou Olivier pour de plus amples informations.',
+    'rsvp.validation.name.required': 'Le nom complet est requis',
+    'rsvp.validation.email.required': 'L\'adresse courriel est requise si vous participez',
+    'rsvp.validation.email.invalid': 'Veuillez entrer une adresse courriel valide',
+    'rsvp.validation.attending.required': 'Veuillez indiquer si vous serez présent',
 
     // Welcome Modal
     'welcome.title': 'Bienvenue!',

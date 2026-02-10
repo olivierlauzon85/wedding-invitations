@@ -177,12 +177,16 @@ const RsvpForm: React.FC = () => {
                   <FormField
                     control={form.control}
                     name="name"
+                    rules={{
+                      required: t('rsvp.validation.name.required')
+                    }}
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>{t('rsvp.name')}</FormLabel>
+                        <FormLabel>{t('rsvp.name')} <span className="text-red-500">*</span></FormLabel>
                         <FormControl>
                           <Input {...field} required />
                         </FormControl>
+                        <FormMessage />
                       </FormItem>
                     )}
                   />
@@ -190,12 +194,27 @@ const RsvpForm: React.FC = () => {
                   <FormField
                     control={form.control}
                     name="email"
+                    rules={{
+                      required: attending === 'yes' ? t('rsvp.validation.email.required') : false,
+                      validate: (value) => {
+                        // If attending is 'yes', email is required
+                        if (attending === 'yes' && !value) {
+                          return t('rsvp.validation.email.required');
+                        }
+                        // If email is provided (whether attending or not), it must be valid
+                        if (value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value)) {
+                          return t('rsvp.validation.email.invalid');
+                        }
+                        return true;
+                      }
+                    }}
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>{t('rsvp.email')}</FormLabel>
+                        <FormLabel>{t('rsvp.email')} {attending === 'yes' && <span className="text-red-500">*</span>}</FormLabel>
                         <FormControl>
-                          <Input type="email" {...field} required />
+                          <Input type="email" {...field} required={attending === 'yes'} />
                         </FormControl>
+                        <FormMessage />
                       </FormItem>
                     )}
                   />
@@ -203,9 +222,12 @@ const RsvpForm: React.FC = () => {
                   <FormField
                     control={form.control}
                     name="attending"
+                    rules={{
+                      required: t('rsvp.validation.attending.required')
+                    }}
                     render={({ field }) => (
                       <FormItem className="space-y-2">
-                        <FormLabel>{t('rsvp.attending')}</FormLabel>
+                        <FormLabel>{t('rsvp.attending')} <span className="text-red-500">*</span></FormLabel>
                         <FormControl>
                           <RadioGroup
                             value={field.value}
@@ -222,6 +244,7 @@ const RsvpForm: React.FC = () => {
                             </div>
                           </RadioGroup>
                         </FormControl>
+                        <FormMessage />
                       </FormItem>
                     )}
                   />
@@ -353,12 +376,6 @@ const RsvpForm: React.FC = () => {
                 <p className="text-muted-foreground">{form.getValues().attending === 'yes' ? 
                   t('rsvp.attending.yes') : 
                   t('rsvp.attending.no')}</p>
-                <Button 
-                  className="mt-6 bg-fall-orange hover:bg-fall-red text-white"
-                  onClick={() => setSubmitted(false)}
-                >
-                  {t('rsvp.submit')}
-                </Button>
               </div>
             )}
           </CardContent>
