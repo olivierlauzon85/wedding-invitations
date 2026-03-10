@@ -100,7 +100,7 @@ export const translations: TranslationsType = {
     'menu.main.fish': 'Fish',
     'menu.main.fish.description': 'Salmon fillet with fresh dill cream',
     'menu.main.vegetarian': 'Vegetarian',
-    'menu.main.vegetarian.description': 'Tomato pesto pasta with vegetables and grilled chickpeas',
+    'menu.main.vegetarian.description': 'Poke bowl with breaded plant-based chicken, crisp vegetables and roasted chickpeas, served on a bed of rice and accompanied by a delicate maple sesame sauce.',
     'menu.dessert.title': 'Dessert',
     'menu.dessert.description': 'Chef\'s sweet surprise',
 
@@ -114,7 +114,7 @@ export const translations: TranslationsType = {
     'rsvp.attending.no': 'Sorry, I can\'t make it',
     'rsvp.guests': 'Number of guests (including yourself)',
     'rsvp.dietary': 'Dietary Requirements',
-    'rsvp.dietary.description': 'Please let us know about any allergies or dietary restrictions',
+    'rsvp.dietary.description': 'Please inform us of any allergies or dietary restrictions. If this applies only to one of the two selected dishes (by you or your guest, if applicable), please specify which dish it concerns.',
     'rsvp.message': 'Message for the couple (optional)',
     'rsvp.submit': 'Submit RSVP',
     'rsvp.thanks': 'Thank you for your response!',
@@ -198,7 +198,7 @@ export const translations: TranslationsType = {
     'menu.main.fish': 'Poisson',
     'menu.main.fish.description': 'Pavé de saumon, crème fraîche à l\'aneth',
     'menu.main.vegetarian': 'Végétarien',
-    'menu.main.vegetarian.description': 'Pâtes au pesto de tomates avec légumes et pois chiches grillés',
+    'menu.main.vegetarian.description': 'Poke bol au faux poulet pané et légumes croquants, pois chiches grillés, servi sur un nid de riz et accompagné d\'une fine sauce sésame à l\'érable.',
     'menu.dessert.title': 'Dessert',
     'menu.dessert.description': 'Surprise sucrée du chef',
 
