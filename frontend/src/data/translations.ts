@@ -58,6 +58,8 @@ export const translations: TranslationsType = {
     'qa.categories.gifts': 'Gifts & Registry',
     'qa.categories.meal': 'Meal Choice',
     'qa.categories.drinks': 'Drinks',
+    'qa.categories.ceremony': 'Ceremony & Reception',
+    'qa.categories.questions': 'Questions',
 
     'qa.accommodation.q1': 'Are there recommended hotels nearby?',
     'qa.accommodation.a1': 'While no accommodation is available on site, a hotel is located just 10 km from the wedding venue, ideal for those coming from further away. Room booking is entirely at your discretion. You can book at Impéria Hôtel & Suites St-Eustache, located at 570 R. Dubois, Saint-Eustache, Québec, J7P 0B3, or by visiting their website: https://imperiahotel.com/eustache/.',
@@ -87,6 +89,12 @@ export const translations: TranslationsType = {
     'qa.drinks.q3': 'Can I bring my own drinks?',
     'qa.drinks.a3': 'No, no drinks from outside will be allowed on site.',
 
+    'qa.ceremony.q1': 'Do the ceremony and reception take place at the same location?',
+    'qa.ceremony.a1': 'Yes, the ceremony and reception will take place at the same location, at Salles de réception Lalande, located at 862 Montée Laurin, Saint-Eustache, QC J7R 4K3.',
+
+    'qa.questions.q1': 'If I have any questions, where should I send them?',
+    'qa.questions.a1': 'You can send your questions to the following email address: mariagejanieolivier@gmail.com, or directly to one of the bride and groom. We, or a member of our wedding party, will reply as soon as possible.',
+
     // Menu Section
     'menu.title': 'Menu',
     'menu.appetizers.title': 'Appetizers',
@@ -100,7 +108,7 @@ export const translations: TranslationsType = {
     'menu.main.fish': 'Fish',
     'menu.main.fish.description': 'Salmon fillet with fresh dill cream',
     'menu.main.vegetarian': 'Vegetarian',
-    'menu.main.vegetarian.description': 'Poke bowl with breaded plant-based chicken, crisp vegetables and roasted chickpeas, served on a bed of rice and accompanied by a delicate maple sesame sauce.',
+    'menu.main.vegetarian.description': 'Poke bowl with breaded plant-based chicken, crisp vegetables and roasted chickpeas, served on a bed of rice and accompanied by a delicate maple sesame sauce',
     'menu.dessert.title': 'Dessert',
     'menu.dessert.description': 'Chef\'s sweet surprise',
 
@@ -198,7 +206,7 @@ export const translations: TranslationsType = {
     'menu.main.fish': 'Poisson',
     'menu.main.fish.description': 'Pavé de saumon, crème fraîche à l\'aneth',
     'menu.main.vegetarian': 'Végétarien',
-    'menu.main.vegetarian.description': 'Poke bol au faux poulet pané et légumes croquants, pois chiches grillés, servi sur un nid de riz et accompagné d\'une fine sauce sésame à l\'érable.',
+    'menu.main.vegetarian.description': 'Poke bol au faux poulet pané et légumes croquants, pois chiches grillés, servi sur un nid de riz et accompagné d\'une fine sauce sésame à l\'érable',
     'menu.dessert.title': 'Dessert',
     'menu.dessert.description': 'Surprise sucrée du chef',
 
@@ -212,6 +220,8 @@ export const translations: TranslationsType = {
     'qa.categories.gifts': 'Cadeaux & Registre',
     'qa.categories.meal': 'Choix du repas',
     'qa.categories.drinks': 'Boissons',
+    'qa.categories.ceremony': 'Cérémonie & Réception',
+    'qa.categories.questions': 'Questions',
 
     'qa.accommodation.q1': 'Y a-t-il des hôtels recommandés à proximité?',
     'qa.accommodation.a1': 'Bien qu\'aucun hébergement ne soit disponible sur place, un hôtel est situé à seulement 10 km du lieu du mariage, idéal pour ceux qui viennent de plus loin. La location de chambre est à votre entière discrétion. Vous pouvez réserver à l\'Impéria Hôtel & Suites St-Eustache, situé au 570 R. Dubois, Saint-Eustache, Québec, J7P 0B3, ou en visitant leur site web : https://imperiahotel.com/eustache/.',
@@ -239,6 +249,12 @@ export const translations: TranslationsType = {
 
     'qa.drinks.q3': 'Puis-je apporter mes propres boissons?',
     'qa.drinks.a3': 'Non, aucune boisson provenant de l\'extérieur ne sera tolérée sur le site.',
+
+    'qa.ceremony.q1': 'Est-ce que la cérémonie et la réception ont lieu au même endroit?',
+    'qa.ceremony.a1': 'Oui, la cérémonie et la réception auront lieu au même endroit, soit aux salles de réception Lalande situé au 862 Montée Laurin, Saint-Eustache, QC J7R 4K3.',
+
+    'qa.questions.q1': 'Si j\'ai des questions, où dois-je les faire parvenir?',
+    'qa.questions.a1': 'Vous pouvez diriger vos questions à l\'adresse courriel suivante: mariagejanieolivier@gmail.com, ou directement à l\'un des mariés. Nous, ou un membre de notre cortège, vous répondra le plus rapidement possible.',
 
     // RSVP
     'rsvp.title': 'RSVP',

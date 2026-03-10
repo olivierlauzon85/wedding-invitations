@@ -1,16 +1,16 @@
 
 import React from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
-import { 
-  Accordion, 
-  AccordionContent, 
-  AccordionItem, 
-  AccordionTrigger 
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger
 } from '@/components/ui/accordion';
-import { 
-  Collapsible, 
-  CollapsibleContent, 
-  CollapsibleTrigger 
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger
 } from '@/components/ui/collapsible';
 import { ChevronDown } from 'lucide-react';
 
@@ -93,6 +93,24 @@ const QandASection: React.FC = () => {
           answer: 'qa.drinks.a3',
         }
       ]
+    },
+    {
+      name: 'qa.categories.ceremony',
+      questions: [
+        {
+          question: 'qa.ceremony.q1',
+          answer: 'qa.ceremony.a1',
+        }
+      ]
+    },
+    {
+      name: 'qa.categories.questions',
+      questions: [
+        {
+          question: 'qa.questions.q1',
+          answer: 'qa.questions.a1',
+        }
+      ]
     }
   ];
 
@@ -100,7 +118,7 @@ const QandASection: React.FC = () => {
     <section id="qa" className="section-wrapper bg-fall-yellow/5">
       <div className="container-wedding">
         <h2 className="section-title mb-12">{t('qa.title')}</h2>
-        
+
         <div className="max-w-3xl mx-auto">
           {categories.map((category, idx) => (
             <Collapsible key={idx} className="mb-6">
